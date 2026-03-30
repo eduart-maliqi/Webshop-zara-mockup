@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenchcoat | ZARA Mockup</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="header__logo">ZARA</a>
+            <nav class="header__nav">
+                <a href="../produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="../produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="../produkte.html#kinder" class="header__nav-link">Kinder</a>
+                <a href="../produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="../kontakt.html" class="header__nav-link">Kontakt</a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="product-detail">
+                <!-- Product Gallery -->
+                <div class="product-detail__gallery">
+                    <img src="https://images.unsplash.com/photo-1579171931975-97962e46be2d?w=800&q=80"
+                         alt="Trenchcoat - Ansicht 1"
+                         class="product-detail__image">
+
+                    <!-- Video -->
+                    <iframe class="product-detail__video"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Produktvideo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-detail__info">
+                    <p class="product-detail__category">Damen / Mäntel</p>
+                    <h1 class="product-detail__name">Trenchcoat</h1>
+                    <p class="product-detail__price">CHF 179.00</p>
+
+                    <p class="product-detail__description">
+                        Klassischer Trenchcoat mit Gürtel und doppelreihiger Knopfleiste.
+                        Ein zeitloser Begleiter für Übergangszeiten.
+                        <br><br>
+                        <strong>Material:</strong> 65% Baumwolle, 35% Polyester<br>
+                        <strong>Pflege:</strong> Chemische Reinigung empfohlen<br>
+                        <strong>Modell:</strong> Das Model ist 178 cm gross und trägt Grösse S
+                    </p>
+
+                    <!-- Order Form -->
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="7719b566-c145-41fd-ac65-685465013305">
+                            <input type="hidden" name="from_name" value="ZARA Mockup Bestellung">
+                            <input type="hidden" name="subject" value="Neue Bestellung: Trenchcoat">
+                        <div class="form__group">
+                            <label for="size" class="form__label">Grösse</label>
+                            <select id="size" name="Grösse" class="form__select" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="quantity" class="form__label">Menge</label>
+                            <select id="quantity" name="Menge" class="form__select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">E-Mail</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="address" class="form__label">Lieferadresse</label>
+                            <textarea id="address" name="Lieferadresse" class="form__textarea" rows="3" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Jetzt bestellen
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="section" style="background: var(--color-bg-alt);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Das könnte Ihnen auch gefallen</h2>
+                </div>
+
+                <div class="products-grid">
+                    <a href="produkt-2.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1617182397327-a05d5c3e2abb?w=800&q=80"
+                                 alt="Oversize Blazer"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Oversize Blazer</h3>
+                            <p class="product-card__price">CHF 129.00</p>
+                        </div>
+                    </a>
+
+                    <a href="produkt-14.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1610288311735-39b7facbd095?w=800&q=80"
+                                 alt="Strickjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Strickjacke</h3>
+                            <p class="product-card__price">CHF 79.90</p>
+                        </div>
+                    </a>
+
+                    <a href="produkt-11.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1767571863253-7af755fa11fb?w=800&q=80"
+                                 alt="Midi Rock"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Midi Rock</h3>
+                            <p class="product-card__price">CHF 69.90</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="../produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="../produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="../produkte.html#kinder" class="footer__link">Kinder</a>
+                        <a href="../produkte.html" class="footer__link">Alle Produkte</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="../kontakt.html" class="footer__link">Kontakt</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Versand</a>
+                        <a href="#" class="footer__link">Rückgabe</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                        <a href="#" class="footer__link">Karriere</a>
+                        <a href="#" class="footer__link">Nachhaltigkeit</a>
+                        <a href="#" class="footer__link">Presse</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="#" class="footer__link">Facebook</a>
+                        <a href="#" class="footer__link">Twitter</a>
+                        <a href="#" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 ZARA Mockup. Dies ist ein Schulprojekt.
+                    Alle Markenrechte gehören ihren jeweiligen Eigentümern.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script>
+const menuBtn = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".header__nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    nav.classList.toggle("is-open");
+  });
+  nav.querySelectorAll(".header__nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("is-open");
+      nav.classList.remove("is-open");
+    });
+  });
+}
+</script>
+</body>
+</html>

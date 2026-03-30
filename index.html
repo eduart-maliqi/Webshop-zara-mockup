@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA Mockup | Mode für Damen, Herren & Kinder</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header--hero">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">ZARA</a>
+            <nav class="header__nav">
+                <a href="produkte.html?kategorie=damen" class="header__nav-link">Damen</a>
+                <a href="produkte.html?kategorie=herren" class="header__nav-link">Herren</a>
+                <a href="produkte.html?kategorie=kinder" class="header__nav-link">Kinder</a>
+                <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&q=80"
+                 alt="Neue Kollektion"
+                 class="hero__image">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Neue Kollektion</h1>
+                <p class="hero__subtitle">Frühjahr / Sommer 2024</p>
+                <a href="produkte.html" class="btn btn--white mt-8">Jetzt entdecken</a>
+            </div>
+        </section>
+
+        <!-- Neue Produkte Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Neue Produkte</h2>
+                    <p class="section-header__subtitle">Entdecken Sie unsere neuesten Styles der Saison</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Produkt 1 -->
+                    <a href="produkte/produkt-1.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1704775990154-b87562565d4c?w=800&q=80"
+                                 alt="Satin Kleid"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Satin Kleid</h3>
+                            <p class="product-card__price">CHF 89.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 2 -->
+                    <a href="produkte/produkt-2.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1617182397327-a05d5c3e2abb?w=800&q=80"
+                                 alt="Oversize Blazer"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Oversize Blazer</h3>
+                            <p class="product-card__price">CHF 129.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 3 -->
+                    <a href="produkte/produkt-4.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1624835589323-442670703bc0?w=800&q=80"
+                                 alt="Oxford Hemd"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Oxford Hemd</h3>
+                            <p class="product-card__price">CHF 49.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 4 -->
+                    <a href="produkte/produkt-6.html" class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=800&q=80"
+                                 alt="Lederjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Lederjacke</h3>
+                            <p class="product-card__price">CHF 189.00</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="produkte.html" class="btn btn--outline">Alle Produkte anzeigen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kategorien Section -->
+        <section class="section section--large" style="background: var(--color-bg-alt);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Kategorien</h2>
+                </div>
+
+                <div class="categories-grid">
+                    <!-- Damen -->
+                    <a href="produkte.html?kategorie=damen" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1704775990154-b87562565d4c?w=800&q=80"
+                             alt="Damen Kollektion"
+                             class="category-card__image">
+                        <div class="category-card__overlay">
+                            <h3 class="category-card__title">Damen</h3>
+                        </div>
+                    </a>
+
+                    <!-- Herren -->
+                    <a href="produkte.html?kategorie=herren" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1624835589323-442670703bc0?w=800&q=80"
+                             alt="Herren Kollektion"
+                             class="category-card__image">
+                        <div class="category-card__overlay">
+                            <h3 class="category-card__title">Herren</h3>
+                        </div>
+                    </a>
+
+                    <!-- Kinder -->
+                    <a href="produkte.html?kategorie=kinder" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1624523276755-4f11827d2386?w=800&q=80"
+                             alt="Kinder Kollektion"
+                             class="category-card__image">
+                        <div class="category-card__overlay">
+                            <h3 class="category-card__title">Kinder</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="container">
+                <h2 class="newsletter__title">Newsletter</h2>
+                <p class="newsletter__text">
+                    Melden Sie sich für unseren Newsletter an und erhalten Sie exklusive Angebote
+                    und Informationen zu neuen Kollektionen.
+                </p>
+                <form class="newsletter__form" action="#" method="post">
+                    <input type="email"
+                           class="newsletter__input"
+                           placeholder="Ihre E-Mail-Adresse"
+                           required
+                           aria-label="E-Mail-Adresse">
+                    <button type="submit" class="btn btn--primary">Anmelden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="produkte.html?kategorie=damen" class="footer__link">Damen</a>
+                        <a href="produkte.html?kategorie=herren" class="footer__link">Herren</a>
+                        <a href="produkte.html?kategorie=kinder" class="footer__link">Kinder</a>
+                        <a href="produkte.html" class="footer__link">Alle Produkte</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="kontakt.html" class="footer__link">Kontakt</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Versand</a>
+                        <a href="#" class="footer__link">Rückgabe</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                        <a href="#" class="footer__link">Karriere</a>
+                        <a href="#" class="footer__link">Nachhaltigkeit</a>
+                        <a href="#" class="footer__link">Presse</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="#" class="footer__link">Facebook</a>
+                        <a href="#" class="footer__link">Twitter</a>
+                        <a href="#" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 ZARA Mockup. Dies ist ein Schulprojekt.
+                    Alle Markenrechte gehören ihren jeweiligen Eigentümern.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script>
+const menuBtn = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".header__nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    nav.classList.toggle("is-open");
+  });
+  nav.querySelectorAll(".header__nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("is-open");
+      nav.classList.remove("is-open");
+    });
+  });
+}
+</script>
+</body>
+</html>

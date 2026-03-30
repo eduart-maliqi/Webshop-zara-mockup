@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Produkte | ZARA Mockup</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Kategorie Filter mit CSS :target */
+        .product-card[data-category] {
+            display: block;
+        }
+
+        /* Verstecke Produkte basierend auf URL-Hash */
+        :target ~ .products-section .product-card:not([data-category="alle"]) {
+            display: none;
+        }
+
+        #damen:target ~ .products-section .product-card[data-category="damen"],
+        #herren:target ~ .products-section .product-card[data-category="herren"],
+        #kinder:target ~ .products-section .product-card[data-category="kinder"],
+        #alle:target ~ .products-section .product-card {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">ZARA</a>
+            <nav class="header__nav">
+                <a href="produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="produkte.html#kinder" class="header__nav-link">Kinder</a>
+                <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Produkte</h1>
+            </div>
+        </section>
+
+        <!-- Anchor targets for CSS filtering -->
+        <span id="alle"></span>
+        <span id="damen"></span>
+        <span id="herren"></span>
+        <span id="kinder"></span>
+
+        <!-- Filter Bar -->
+        <section class="container">
+            <div class="filter-bar">
+                <a href="produkte.html#alle" class="filter-bar__link filter-bar__link--active">Alle</a>
+                <a href="produkte.html#damen" class="filter-bar__link">Damen</a>
+                <a href="produkte.html#herren" class="filter-bar__link">Herren</a>
+                <a href="produkte.html#kinder" class="filter-bar__link">Kinder</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="section products-section">
+            <div class="container">
+                <div class="products-grid">
+
+                    <!-- Produkt 1: Damen - Kleid -->
+                    <a href="produkte/produkt-1.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1704775990154-b87562565d4c?w=800&q=80"
+                                 alt="Satin Kleid"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Satin Kleid</h3>
+                            <p class="product-card__price">CHF 89.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 2: Damen - Blazer -->
+                    <a href="produkte/produkt-2.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1617182397327-a05d5c3e2abb?w=800&q=80"
+                                 alt="Oversize Blazer"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Oversize Blazer</h3>
+                            <p class="product-card__price">CHF 129.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 3: Damen - Tasche -->
+                    <a href="produkte/produkt-3.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1588122698107-836d3c39704c?w=800&q=80"
+                                 alt="Leder Shopper"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Leder Shopper</h3>
+                            <p class="product-card__price">CHF 149.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 4: Herren - Hemd -->
+                    <a href="produkte/produkt-4.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1624835589323-442670703bc0?w=800&q=80"
+                                 alt="Oxford Hemd"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Oxford Hemd</h3>
+                            <p class="product-card__price">CHF 49.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 5: Herren - Hose -->
+                    <a href="produkte/produkt-5.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="assets/slim-fit-chino.avif"
+                                 alt="Slim Fit Chino"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Slim Fit Chino</h3>
+                            <p class="product-card__price">CHF 59.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 6: Herren - Jacke -->
+                    <a href="produkte/produkt-6.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=800&q=80"
+                                 alt="Lederjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Lederjacke</h3>
+                            <p class="product-card__price">CHF 189.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 7: Kinder - T-Shirt -->
+                    <a href="produkte/produkt-7.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1624523276755-4f11827d2386?w=800&q=80"
+                                 alt="Basic T-Shirt"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Basic T-Shirt</h3>
+                            <p class="product-card__price">CHF 19.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 8: Kinder - Jeans -->
+                    <a href="produkte/produkt-8.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=800&q=80"
+                                 alt="Stretch Jeans"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Stretch Jeans</h3>
+                            <p class="product-card__price">CHF 29.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 9: Damen - Schuhe -->
+                    <a href="produkte/produkt-9.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1651126581286-a6ae76cb5c78?w=800&q=80"
+                                 alt="Leder Pumps"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Leder Pumps</h3>
+                            <p class="product-card__price">CHF 79.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 10: Herren - Pullover -->
+                    <a href="produkte/produkt-10.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1576110598658-096ae24cdb97?w=800&q=80"
+                                 alt="Kaschmir Pullover"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Kaschmir Pullover</h3>
+                            <p class="product-card__price">CHF 99.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 11: Damen - Rock -->
+                    <a href="produkte/produkt-11.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556747439-3b96858b9d8d?w=800&q=80"
+                                 alt="Midi Rock"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Midi Rock</h3>
+                            <p class="product-card__price">CHF 69.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 12: Damen - Mantel -->
+                    <a href="produkte/produkt-12.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579171931975-97962e46be2d?w=800&q=80"
+                                 alt="Trenchcoat"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Trenchcoat</h3>
+                            <p class="product-card__price">CHF 179.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 13: Damen - Sneakers -->
+                    <a href="produkte/produkt-13.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542280756-74b2f55e73ab?w=800&q=80"
+                                 alt="Weisse Sneakers"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Weisse Sneakers</h3>
+                            <p class="product-card__price">CHF 59.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 14: Damen - Strickjacke -->
+                    <a href="produkte/produkt-14.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1610288311735-39b7facbd095?w=800&q=80"
+                                 alt="Strickjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Strickjacke</h3>
+                            <p class="product-card__price">CHF 79.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 15: Damen - Bluse -->
+                    <a href="produkte/produkt-15.html" class="product-card" data-category="damen">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1682997843688-94722786a722?w=800&q=80"
+                                 alt="Seidenbluse"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Seidenbluse</h3>
+                            <p class="product-card__price">CHF 89.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 16: Herren - Denim Jacke -->
+                    <a href="produkte/produkt-16.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1562068391-2ccb2c3e7c2b?w=800&q=80"
+                                 alt="Denim Jacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Denim Jacke</h3>
+                            <p class="product-card__price">CHF 89.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 17: Herren - Wollmantel -->
+                    <a href="produkte/produkt-17.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1575862469264-0a2e53494cdf?w=800&q=80"
+                                 alt="Wollmantel"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Wollmantel</h3>
+                            <p class="product-card__price">CHF 249.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 18: Herren - Poloshirt -->
+                    <a href="produkte/produkt-18.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1614890085618-0e1054da74f8?w=800&q=80"
+                                 alt="Poloshirt"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Poloshirt</h3>
+                            <p class="product-card__price">CHF 39.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 19: Herren - Sneakers -->
+                    <a href="produkte/produkt-19.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1725271741302-4b87691dde86?w=800&q=80"
+                                 alt="Leder Sneakers"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Leder Sneakers</h3>
+                            <p class="product-card__price">CHF 119.00</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 20: Herren - Anzughose -->
+                    <a href="produkte/produkt-20.html" class="product-card" data-category="herren">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=800&q=80"
+                                 alt="Anzughose"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Anzughose</h3>
+                            <p class="product-card__price">CHF 79.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 21: Kinder - Winterjacke -->
+                    <a href="produkte/produkt-21.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1645458456929-43ba80e6bf18?w=800&q=80"
+                                 alt="Winterjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Winterjacke</h3>
+                            <p class="product-card__price">CHF 59.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 22: Kinder - Kleid -->
+                    <a href="produkte/produkt-22.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1656337869317-2b906ee2b84d?w=800&q=80"
+                                 alt="Kleid"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Kleid</h3>
+                            <p class="product-card__price">CHF 34.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 23: Kinder - Hoodie -->
+                    <a href="produkte/produkt-23.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1631084412577-9f4d5829be98?w=800&q=80"
+                                 alt="Hoodie"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Hoodie</h3>
+                            <p class="product-card__price">CHF 29.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 24: Kinder - Regenjacke -->
+                    <a href="produkte/produkt-24.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1571722335489-7a9760b12571?w=800&q=80"
+                                 alt="Regenjacke"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Regenjacke</h3>
+                            <p class="product-card__price">CHF 39.90</p>
+                        </div>
+                    </a>
+
+                    <!-- Produkt 25: Kinder - Jogginghose -->
+                    <a href="produkte/produkt-25.html" class="product-card" data-category="kinder">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1659779193831-97ccb9fecfeb?w=800&q=80"
+                                 alt="Jogginghose"
+                                 class="product-card__image">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Jogginghose</h3>
+                            <p class="product-card__price">CHF 24.90</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="produkte.html#kinder" class="footer__link">Kinder</a>
+                        <a href="produkte.html" class="footer__link">Alle Produkte</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="kontakt.html" class="footer__link">Kontakt</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Versand</a>
+                        <a href="#" class="footer__link">Rückgabe</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                        <a href="#" class="footer__link">Karriere</a>
+                        <a href="#" class="footer__link">Nachhaltigkeit</a>
+                        <a href="#" class="footer__link">Presse</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="#" class="footer__link">Facebook</a>
+                        <a href="#" class="footer__link">Twitter</a>
+                        <a href="#" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 ZARA Mockup. Dies ist ein Schulprojekt.
+                    Alle Markenrechte gehören ihren jeweiligen Eigentümern.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script>
+const menuBtn = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".header__nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    nav.classList.toggle("is-open");
+  });
+  nav.querySelectorAll(".header__nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("is-open");
+      nav.classList.remove("is-open");
+    });
+  });
+}
+</script>
+</body>
+</html>

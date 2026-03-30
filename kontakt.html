@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | ZARA Mockup</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">ZARA</a>
+            <nav class="header__nav">
+                <a href="produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="produkte.html#kinder" class="header__nav-link">Kinder</a>
+                <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Kontakt</h1>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Unser Team</h2>
+                    <p class="section-header__subtitle">
+                        Wir sind für Sie da! Unser engagiertes Team steht Ihnen
+                        bei allen Fragen rund um Ihre Bestellung zur Verfügung.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-card">
+                        <img src="https://noseryoung.ch/wp-content/uploads/2025/10/Eduart-768x768.jpg"
+                             alt="Eduart"
+                             class="team-card__image">
+                        <h3 class="team-card__name">Eduart</h3>
+                        <p class="team-card__role">Lead Developer – Entwicklung & Umsetzung</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-card">
+                        <img src="https://noseryoung.ch/wp-content/uploads/2025/10/Zino-768x768.jpg"
+                             alt="Zino"
+                             class="team-card__image">
+                        <h3 class="team-card__name">Zino</h3>
+                        <p class="team-card__role">Design – Bildauswahl & Visuelles</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-card">
+                        <img src="https://noseryoung.ch/wp-content/uploads/2025/10/Fidan-768x768.jpg"
+                             alt="Fidan"
+                             class="team-card__image">
+                        <h3 class="team-card__name">Fidan</h3>
+                        <p class="team-card__role">Junior – Beobachtung & Lernen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section" style="background: var(--color-bg-alt);">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="mb-8">Kontaktinformationen</h2>
+
+                        <div class="mb-8">
+                            <h4 class="mb-4">Adresse</h4>
+                            <p class="text-muted">
+                                ZARA Mockup Store<br>
+                                Bahnhofstrasse 123<br>
+                                8001 Zürich<br>
+                                Schweiz
+                            </p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="mb-4">Öffnungszeiten</h4>
+                            <p class="text-muted">
+                                Montag - Freitag: 09:00 - 20:00<br>
+                                Samstag: 09:00 - 18:00<br>
+                                Sonntag: Geschlossen
+                            </p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="mb-4">Telefon</h4>
+                            <p class="text-muted">
+                                +41 44 123 45 67
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="mb-4">E-Mail</h4>
+                            <p class="text-muted">
+                                info@zara-mockup.ch
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="mb-8">Schreiben Sie uns</h2>
+
+                        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="7719b566-c145-41fd-ac65-685465013305">
+                            <input type="hidden" name="subject" value="Neue Kontaktanfrage - ZARA Mockup">
+                            <input type="hidden" name="from_name" value="ZARA Mockup Kontaktformular">
+
+                            <!-- Betreff Dropdown (Pflichtanforderung) -->
+                            <div class="form__group">
+                                <label for="betreff" class="form__label">Betreff</label>
+                                <select id="betreff" name="Betreff" class="form__select" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="Frage zu einer Bestellung">Frage zu einer Bestellung</option>
+                                    <option value="Reklamation">Reklamation</option>
+                                    <option value="Rückgabe & Umtausch">Rückgabe & Umtausch</option>
+                                    <option value="Produktanfrage">Produktanfrage</option>
+                                    <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+                                    <option value="Feedback & Lob">Feedback & Lob</option>
+                                    <option value="Sonstiges">Sonstiges</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="name" class="form__label">Ihr Name</label>
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       class="form__input"
+                                       placeholder="Vor- und Nachname"
+                                       required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">Ihre E-Mail</label>
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       class="form__input"
+                                       placeholder="ihre@email.ch"
+                                       required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Telefon (optional)</label>
+                                <input type="tel"
+                                       id="phone"
+                                       name="Telefon"
+                                       class="form__input"
+                                       placeholder="+41 ...">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="order-number" class="form__label">Bestellnummer (falls vorhanden)</label>
+                                <input type="text"
+                                       id="order-number"
+                                       name="Bestellnummer"
+                                       class="form__input"
+                                       placeholder="z.B. ZM-2024-12345">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">Ihre Nachricht</label>
+                                <textarea id="message"
+                                          name="message"
+                                          class="form__textarea"
+                                          rows="6"
+                                          placeholder="Wie können wir Ihnen helfen?"
+                                          required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Nachricht senden
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-header__title">Häufige Fragen</h2>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="mb-8">
+                        <h4 class="mb-4">Wie lange dauert der Versand?</h4>
+                        <p class="text-muted">
+                            Standardversand innerhalb der Schweiz dauert 2-3 Werktage.
+                            Express-Lieferung ist am nächsten Werktag verfügbar.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h4 class="mb-4">Kann ich meine Bestellung zurückgeben?</h4>
+                        <p class="text-muted">
+                            Ja, Sie haben 30 Tage Zeit, Artikel zurückzugeben.
+                            Die Rücksendung ist kostenlos.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h4 class="mb-4">Welche Zahlungsmethoden akzeptieren Sie?</h4>
+                        <p class="text-muted">
+                            Wir akzeptieren Kreditkarten (Visa, Mastercard, American Express),
+                            PayPal, Twint und Rechnung.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-4">Wie kann ich meine Bestellung verfolgen?</h4>
+                        <p class="text-muted">
+                            Nach dem Versand erhalten Sie eine E-Mail mit einem
+                            Tracking-Link zur Sendungsverfolgung.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="produkte.html#kinder" class="footer__link">Kinder</a>
+                        <a href="produkte.html" class="footer__link">Alle Produkte</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="kontakt.html" class="footer__link">Kontakt</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Versand</a>
+                        <a href="#" class="footer__link">Rückgabe</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                        <a href="#" class="footer__link">Karriere</a>
+                        <a href="#" class="footer__link">Nachhaltigkeit</a>
+                        <a href="#" class="footer__link">Presse</a>
+                    </nav>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="#" class="footer__link">Facebook</a>
+                        <a href="#" class="footer__link">Twitter</a>
+                        <a href="#" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 ZARA Mockup. Dies ist ein Schulprojekt.
+                    Alle Markenrechte gehören ihren jeweiligen Eigentümern.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script>
+const menuBtn = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".header__nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    nav.classList.toggle("is-open");
+  });
+  nav.querySelectorAll(".header__nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("is-open");
+      nav.classList.remove("is-open");
+    });
+  });
+}
+</script>
+</body>
+</html>

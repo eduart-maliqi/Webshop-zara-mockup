@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leder Sneakers | ZARA Mockup</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="../index.html" class="header__logo">ZARA</a>
+            <nav class="header__nav">
+                <a href="../produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="../produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="../produkte.html#kinder" class="header__nav-link">Kinder</a>
+                <a href="../produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="../kontakt.html" class="header__nav-link">Kontakt</a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product-detail">
+                <div class="product-detail__gallery">
+                    <img src="https://images.unsplash.com/photo-1725271741302-4b87691dde86?w=800&q=80"
+                         alt="Leder Sneakers" class="product-detail__image">
+                    <iframe class="product-detail__video" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Produktvideo" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="product-detail__info">
+                    <p class="product-detail__category">Herren / Schuhe</p>
+                    <h1 class="product-detail__name">Leder Sneakers</h1>
+                    <p class="product-detail__price">CHF 119.00</p>
+
+                    <p class="product-detail__description">
+                        Premium Sneakers aus echtem Leder mit minimalistischem Design. Die gepolsterte Innensohle bietet ganztägigen Komfort.
+                        <br><br>
+                        <strong>Material:</strong> Obermaterial: Echtleder, Sohle: Gummi<br>
+                        <strong>Pflege:</strong> Mit feuchtem Tuch reinigen<br>
+                        <strong>Passform:</strong> Fällt normal aus
+                    </p>
+
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="7719b566-c145-41fd-ac65-685465013305">
+                            <input type="hidden" name="from_name" value="ZARA Mockup Bestellung">
+                            <input type="hidden" name="subject" value="Neue Bestellung: Leder Sneakers">
+                        <div class="form__group">
+                            <label for="size" class="form__label">Grösse</label>
+                            <select id="size" name="Grösse" class="form__select" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="quantity" class="form__label">Menge</label>
+                            <select id="quantity" name="Menge" class="form__select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">E-Mail</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="address" class="form__label">Lieferadresse</label>
+                            <textarea id="address" name="Lieferadresse" class="form__textarea" rows="3" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Jetzt bestellen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="../produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="../produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="../produkte.html#kinder" class="footer__link">Kinder</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="../kontakt.html" class="footer__link">Kontakt</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 ZARA Mockup. Schulprojekt.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+const menuBtn = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".header__nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-open");
+    nav.classList.toggle("is-open");
+  });
+  nav.querySelectorAll(".header__nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("is-open");
+      nav.classList.remove("is-open");
+    });
+  });
+}
+</script>
+</body>
+</html>
