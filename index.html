@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZARA Mockup | Mode für Damen, Herren & Kinder</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
     <!-- Header -->
     <header class="header header--hero">
         <div class="container header__inner">
-            <a href="index.html" class="header__logo">ZARA</a>
+            <a href="index.html" class="header__logo"><svg class="header__logo-svg" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZARA"><text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle">ZARA</text></svg></a>
             <nav class="header__nav">
-                <a href="produkte.html?kategorie=damen" class="header__nav-link">Damen</a>
-                <a href="produkte.html?kategorie=herren" class="header__nav-link">Herren</a>
-                <a href="produkte.html?kategorie=kinder" class="header__nav-link">Kinder</a>
+                <a href="produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="produkte.html#kinder" class="header__nav-link">Kinder</a>
                 <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
                 <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+                <a href="login.html" class="header__nav-link">Anmelden</a>
+                <a href="warenkorb.html" class="header__nav-link header__cart-link"><svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5L22 7H6"/></svg><span class="visually-hidden">Warenkorb</span> <span class="header__cart-count" data-cart-count>0</span></a>
             </nav>
             <button class="header__menu-btn" aria-label="Menü öffnen">
                 <span></span>
@@ -36,7 +38,7 @@
             <div class="hero__overlay"></div>
             <div class="hero__content">
                 <h1 class="hero__title">Neue Kollektion</h1>
-                <p class="hero__subtitle">Frühjahr / Sommer 2024</p>
+                <p class="hero__subtitle">Frühjahr / Sommer 2026</p>
                 <a href="produkte.html" class="btn btn--white mt-8">Jetzt entdecken</a>
             </div>
         </section>
@@ -118,7 +120,7 @@
 
                 <div class="categories-grid">
                     <!-- Damen -->
-                    <a href="produkte.html?kategorie=damen" class="category-card">
+                    <a href="produkte.html#damen" class="category-card">
                         <img src="https://images.unsplash.com/photo-1704775990154-b87562565d4c?w=800&q=80"
                              alt="Damen Kollektion"
                              class="category-card__image">
@@ -128,7 +130,7 @@
                     </a>
 
                     <!-- Herren -->
-                    <a href="produkte.html?kategorie=herren" class="category-card">
+                    <a href="produkte.html#herren" class="category-card">
                         <img src="https://images.unsplash.com/photo-1624835589323-442670703bc0?w=800&q=80"
                              alt="Herren Kollektion"
                              class="category-card__image">
@@ -138,7 +140,7 @@
                     </a>
 
                     <!-- Kinder -->
-                    <a href="produkte.html?kategorie=kinder" class="category-card">
+                    <a href="produkte.html#kinder" class="category-card">
                         <img src="https://images.unsplash.com/photo-1624523276755-4f11827d2386?w=800&q=80"
                              alt="Kinder Kollektion"
                              class="category-card__image">
@@ -177,9 +179,9 @@
                 <div class="footer__column">
                     <h4 class="footer__title">Shop</h4>
                     <nav class="footer__links">
-                        <a href="produkte.html?kategorie=damen" class="footer__link">Damen</a>
-                        <a href="produkte.html?kategorie=herren" class="footer__link">Herren</a>
-                        <a href="produkte.html?kategorie=kinder" class="footer__link">Kinder</a>
+                        <a href="produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="produkte.html#kinder" class="footer__link">Kinder</a>
                         <a href="produkte.html" class="footer__link">Alle Produkte</a>
                     </nav>
                 </div>
@@ -207,10 +209,10 @@
                 <div class="footer__column">
                     <h4 class="footer__title">Social</h4>
                     <nav class="footer__links">
-                        <a href="#" class="footer__link">Instagram</a>
-                        <a href="#" class="footer__link">Facebook</a>
-                        <a href="#" class="footer__link">Twitter</a>
-                        <a href="#" class="footer__link">Pinterest</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Instagram</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Facebook</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Twitter</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Pinterest</a>
                     </nav>
                 </div>
             </div>
@@ -239,5 +241,9 @@ if (menuBtn && nav) {
   });
 }
 </script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="js/auth.js?v=1"></script>
+    <script src="js/cart.js?v=2"></script>
 </body>
 </html>

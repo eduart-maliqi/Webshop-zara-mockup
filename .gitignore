@@ -2,20 +2,53 @@
 .claude/
 CLAUDE.md
 
-# Projektauftrag
+# Projektauftrag (Original-Dokument nicht im Repo)
 M293-PA03-Projektauftrag-Webshop.docx
+Aufgabenbeschrieb.md
 
 # Firebase
 .firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 nul
 
-# IDE
+# IDE / Editor
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Logs
+*.log
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# Temporäre Dateien / Backups
+*.bak
+*.tmp
+*.orig
+
+# Build / Cache
+dist/
+build/
+.cache/
+
+# Hilfs-Scripts (Migration, nicht Teil der Abgabe)
+md-files/apply_cart.py

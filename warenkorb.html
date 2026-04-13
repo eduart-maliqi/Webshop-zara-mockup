@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb | ZARA Mockup</title>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo"><svg class="header__logo-svg" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZARA"><text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle">ZARA</text></svg></a>
+            <nav class="header__nav">
+                <a href="produkte.html#damen" class="header__nav-link">Damen</a>
+                <a href="produkte.html#herren" class="header__nav-link">Herren</a>
+                <a href="produkte.html#kinder" class="header__nav-link">Kinder</a>
+                <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
+                <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+                <a href="login.html" class="header__nav-link">Anmelden</a>
+                <a href="warenkorb.html" class="header__nav-link header__cart-link"><svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5L22 7H6"/></svg><span class="visually-hidden">Warenkorb</span> <span class="header__cart-count" data-cart-count>0</span></a>
+            </nav>
+            <button class="header__menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1 class="cart-title">WARENKORB</h1>
+
+            <div class="cart-layout">
+                <div class="cart-layout__items">
+                    <div data-cart-list class="cart-list"></div>
+
+                    <p data-cart-empty class="cart-empty">
+                        Ihr Warenkorb ist leer. <a href="produkte.html">Jetzt einkaufen</a>
+                    </p>
+                </div>
+
+                <aside class="cart-layout__sidebar" data-cart-summary>
+                    <div class="cart-summary__row cart-summary__row--link">
+                        <span>RABATTE</span>
+                        <a href="#" class="cart-summary__link">HINZUFÜGEN</a>
+                    </div>
+                    <div class="cart-summary__divider"></div>
+                    <div class="cart-summary__row">
+                        <span>Bestellwert</span>
+                        <span data-cart-subtotal>CHF 0.00</span>
+                    </div>
+                    <div class="cart-summary__row">
+                        <span>Voraussichtliche Liefergebühr</span>
+                        <span data-cart-shipping>CHF 0.00</span>
+                    </div>
+                    <div class="cart-summary__divider"></div>
+                    <div class="cart-summary__row cart-summary__row--total">
+                        <span>GESAMTSUMME</span>
+                        <span data-cart-total>CHF 0.00</span>
+                    </div>
+
+                    <a href="#bestellformular" class="btn btn--primary btn--full cart-summary__checkout">
+                        WEITER ZUR KASSE
+                    </a>
+                    <button type="button" class="btn btn--outline btn--full cart-summary__login">
+                        EINLOGGEN
+                    </button>
+
+                    <div class="cart-summary__payments">
+                        <span class="cart-payment">Klarna</span>
+                        <span class="cart-payment">AMEX</span>
+                        <span class="cart-payment">VISA</span>
+                        <span class="cart-payment">MasterCard</span>
+                        <span class="cart-payment">PayPal</span>
+                    </div>
+
+                    <p class="cart-summary__note">
+                        Preise und Versandkosten werden erst bezahlt, wenn du deinen Einkauf abschliesst.
+                    </p>
+
+                    <p class="cart-summary__note">
+                        30 Tage Bedenkzeit ab Erhalt für Vollpreisartikel / 14 Tage für Sale- und Letzte Chance-Artikel.
+                        Weitere Informationen zur <a href="#">Rücksendung</a> und <a href="#">Rückerstattung</a>.
+                    </p>
+
+                    <button type="button" class="cart-summary__clear" data-cart-clear>
+                        Warenkorb leeren
+                    </button>
+                </aside>
+            </div>
+
+            <!-- Zentrales Bestellformular -->
+            <section class="section" id="bestellformular" data-cart-order-form>
+                <div class="section-header">
+                    <h2 class="section-header__title">Bestellung abschliessen</h2>
+                </div>
+
+                <form class="form form--cart" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7719b566-c145-41fd-ac65-685465013305">
+                    <input type="hidden" name="from_name" value="ZARA Mockup Bestellung">
+                    <input type="hidden" name="subject" value="Neue Warenkorb-Bestellung">
+                    <textarea name="Bestellung" data-cart-hidden hidden></textarea>
+
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-Mail</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="address" class="form__label">Lieferadresse</label>
+                        <textarea id="address" name="Lieferadresse" class="form__textarea" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="notes" class="form__label">Bemerkungen (optional)</label>
+                        <textarea id="notes" name="Bemerkungen" class="form__textarea" rows="2"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">
+                        Jetzt kostenpflichtig bestellen
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <h4 class="footer__title">Shop</h4>
+                    <nav class="footer__links">
+                        <a href="produkte.html#damen" class="footer__link">Damen</a>
+                        <a href="produkte.html#herren" class="footer__link">Herren</a>
+                        <a href="produkte.html#kinder" class="footer__link">Kinder</a>
+                        <a href="produkte.html" class="footer__link">Alle Produkte</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Hilfe</h4>
+                    <nav class="footer__links">
+                        <a href="kontakt.html" class="footer__link">Kontakt</a>
+                        <a href="warenkorb.html" class="footer__link">Warenkorb</a>
+                        <a href="#" class="footer__link">Versand</a>
+                        <a href="#" class="footer__link">Rückgabe</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Unternehmen</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Über uns</a>
+                        <a href="#" class="footer__link">Karriere</a>
+                        <a href="#" class="footer__link">Nachhaltigkeit</a>
+                        <a href="#" class="footer__link">Presse</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Social</h4>
+                    <nav class="footer__links">
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Instagram</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Facebook</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Twitter</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 ZARA Mockup. Dies ist ein Schulprojekt.
+                    Alle Markenrechte gehören ihren jeweiligen Eigentümern.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="js/auth.js?v=1"></script>
+    <script src="js/cart.js?v=2"></script>
+    <script>
+    const menuBtn = document.querySelector(".header__menu-btn");
+    const nav = document.querySelector(".header__nav");
+    if (menuBtn && nav) {
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("is-open");
+            nav.classList.toggle("is-open");
+        });
+    }
+    </script>
+</body>
+</html>

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leder Pumps | ZARA Mockup</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css?v=2">
 </head>
 <body>
     <header class="header">
         <div class="container header__inner">
-            <a href="../index.html" class="header__logo">ZARA</a>
+            <a href="../index.html" class="header__logo"><svg class="header__logo-svg" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZARA"><text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle">ZARA</text></svg></a>
             <nav class="header__nav">
                 <a href="../produkte.html#damen" class="header__nav-link">Damen</a>
                 <a href="../produkte.html#herren" class="header__nav-link">Herren</a>
                 <a href="../produkte.html#kinder" class="header__nav-link">Kinder</a>
                 <a href="../produkte.html" class="header__nav-link">Alle Produkte</a>
                 <a href="../kontakt.html" class="header__nav-link">Kontakt</a>
+                <a href="../login.html" class="header__nav-link">Anmelden</a>
+                <a href="../warenkorb.html" class="header__nav-link header__cart-link"><svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5L22 7H6"/></svg><span class="visually-hidden">Warenkorb</span> <span class="header__cart-count" data-cart-count>0</span></a>
             </nav>
             <button class="header__menu-btn" aria-label="Menü öffnen">
                 <span></span><span></span><span></span>
@@ -48,13 +50,16 @@
                         <strong>Innensohle:</strong> Gepolstert für extra Komfort
                     </p>
 
-                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="7719b566-c145-41fd-ac65-685465013305">
-                            <input type="hidden" name="from_name" value="ZARA Mockup Bestellung">
-                            <input type="hidden" name="subject" value="Neue Bestellung: Leder Pumps">
+                    <!-- Order Form -->
+                    <form class="form" data-add-to-cart
+                          data-product-id="9"
+                          data-product-name="Leder Pumps"
+                          data-product-price="79.90"
+                          data-product-image="https://images.unsplash.com/photo-1651126581286-a6ae76cb5c78?w=800&q=80"
+                          data-product-url="../produkte/produkt-9.html">
                         <div class="form__group">
                             <label for="size" class="form__label">Grösse</label>
-                            <select id="size" name="Grösse" class="form__select" required>
+                            <select id="size" name="size" class="form__select" required>
                                 <option value="">Bitte wählen</option>
                                 <option value="36">36</option>
                                 <option value="37">37</option>
@@ -67,28 +72,23 @@
 
                         <div class="form__group">
                             <label for="quantity" class="form__label">Menge</label>
-                            <select id="quantity" name="Menge" class="form__select" required>
+                            <select id="quantity" name="quantity" class="form__select" required>
                                 <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
 
-                        <div class="form__group">
-                            <label for="name" class="form__label">Name</label>
-                            <input type="text" id="name" name="name" class="form__input" required>
-                        </div>
-
-                        <div class="form__group">
-                            <label for="email" class="form__label">E-Mail</label>
-                            <input type="email" id="email" name="email" class="form__input" required>
-                        </div>
-
-                        <div class="form__group">
-                            <label for="address" class="form__label">Lieferadresse</label>
-                            <textarea id="address" name="Lieferadresse" class="form__textarea" rows="3" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn--primary btn--full">Jetzt bestellen</button>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            In den Warenkorb
+                        </button>
+                        <a href="../warenkorb.html" class="btn btn--outline btn--full" style="margin-top: var(--space-3);">
+                            Zum Warenkorb
+                        </a>
                     </form>
+                    <div class="cart-notice" data-cart-notice>Artikel wurde zum Warenkorb hinzugefügt</div>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                 <div class="footer__column">
                     <h4 class="footer__title">Social</h4>
                     <nav class="footer__links">
-                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Instagram</a>
                     </nav>
                 </div>
             </div>
@@ -145,5 +145,9 @@ if (menuBtn && nav) {
   });
 }
 </script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="../js/auth.js?v=1"></script>
+    <script src="../js/cart.js?v=2"></script>
 </body>
 </html>

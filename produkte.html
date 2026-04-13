@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alle Produkte | ZARA Mockup</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2">
     <style>
         /* Kategorie Filter mit CSS :target */
         .product-card[data-category] {
@@ -28,13 +28,15 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__inner">
-            <a href="index.html" class="header__logo">ZARA</a>
+            <a href="index.html" class="header__logo"><svg class="header__logo-svg" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZARA"><text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle">ZARA</text></svg></a>
             <nav class="header__nav">
                 <a href="produkte.html#damen" class="header__nav-link">Damen</a>
                 <a href="produkte.html#herren" class="header__nav-link">Herren</a>
                 <a href="produkte.html#kinder" class="header__nav-link">Kinder</a>
                 <a href="produkte.html" class="header__nav-link">Alle Produkte</a>
                 <a href="kontakt.html" class="header__nav-link">Kontakt</a>
+                <a href="login.html" class="header__nav-link">Anmelden</a>
+                <a href="warenkorb.html" class="header__nav-link header__cart-link"><svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5L22 7H6"/></svg><span class="visually-hidden">Warenkorb</span> <span class="header__cart-count" data-cart-count>0</span></a>
             </nav>
             <button class="header__menu-btn" aria-label="Menü öffnen">
                 <span></span>
@@ -168,7 +170,7 @@
                     <!-- Produkt 8: Kinder - Jeans -->
                     <a href="produkte/produkt-8.html" class="product-card" data-category="kinder">
                         <div class="product-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=800&q=80"
+                            <img src="https://images.unsplash.com/photo-1714074565982-555b6b1e12ac?w=800&q=80"
                                  alt="Stretch Jeans"
                                  class="product-card__image">
                         </div>
@@ -324,7 +326,7 @@
                     <!-- Produkt 20: Herren - Anzughose -->
                     <a href="produkte/produkt-20.html" class="product-card" data-category="herren">
                         <div class="product-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=800&q=80"
+                            <img src="https://images.unsplash.com/photo-1679101893304-045625840a94?w=800&q=80"
                                  alt="Anzughose"
                                  class="product-card__image">
                         </div>
@@ -389,7 +391,7 @@
                     <!-- Produkt 25: Kinder - Jogginghose -->
                     <a href="produkte/produkt-25.html" class="product-card" data-category="kinder">
                         <div class="product-card__image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1659779193831-97ccb9fecfeb?w=800&q=80"
+                            <img src="https://plus.unsplash.com/premium_photo-1706151505903-cbc06977f01d?w=800&q=80"
                                  alt="Jogginghose"
                                  class="product-card__image">
                         </div>
@@ -441,10 +443,10 @@
                 <div class="footer__column">
                     <h4 class="footer__title">Social</h4>
                     <nav class="footer__links">
-                        <a href="#" class="footer__link">Instagram</a>
-                        <a href="#" class="footer__link">Facebook</a>
-                        <a href="#" class="footer__link">Twitter</a>
-                        <a href="#" class="footer__link">Pinterest</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Instagram</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Facebook</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Twitter</a>
+                        <a href="https://www.instagram.com/eckpunkt.ch/" target="_blank" rel="noopener" class="footer__link">Pinterest</a>
                     </nav>
                 </div>
             </div>
@@ -473,5 +475,9 @@ if (menuBtn && nav) {
   });
 }
 </script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="js/auth.js?v=1"></script>
+    <script src="js/cart.js?v=2"></script>
 </body>
 </html>

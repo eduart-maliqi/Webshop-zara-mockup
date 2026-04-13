@@ -60,7 +60,7 @@
 | Nicht-Code-Aufgaben | Möglich | Empfohlen |
 | Wireframes/Design-Ideen | Möglich | Besser geeignet |
 
-**Fazit:** Claude Code habe ich für alle Coding-Aufgaben benutzt. Google Gemini kam für konzeptionelle und nicht-technische Fragen zum Einsatz. Die Kombination beider Tools hat den Entwicklungsprozess unterstützt.
+**Fazit der Tabelle:** Claude Code habe ich für alle Coding-Aufgaben benutzt. Google Gemini kam für konzeptionelle und nicht-technische Fragen zum Einsatz. Die Kombination beider Tools hat den Entwicklungsprozess unterstützt.
 
 ---
 
@@ -74,3 +74,12 @@ Ich habe mich bewusst für Claude Code im Terminal entschieden und nicht für di
 - Ich das CLI schon länger benutze und damit vertraut bin
 - Die Extension viele `/befehle` nicht unterstützt, die im Terminal funktionieren
 - Ich es einfach cooler finde, im Terminal zu arbeiten
+
+<br>
+
+## Fazit
+
+Ehrlich gesagt habe ich während diesem Projekt nicht viel komplett Neues gelernt, da ich mit HTML, CSS und den eingesetzten KI-Tools schon vorher vertraut war. Trotzdem hat mir das Projekt gezeigt, dass mein KI-Einsatz sehr effektiv ist: Ich hatte in jeder Lektion bis zum Schluss genug Claude-Tokens übrig, weil ich einfachere Fragen an Gemini ausgelagert habe und Claude Code nur für die eigentliche Code-Arbeit eingesetzt habe. Diese Aufgabenteilung hat sich klar ausgezahlt.
+
+Insgesamt bin ich sehr zufrieden mit meinem Projekt. Ich finde, dass meine Webseite optisch wie auch strukturell sehr gut geworden ist und das Konzept eines Zara-inspirierten Mockup-Webshops gut rüberkommt. Beim nächsten Mal würde ich alles genau so wieder machen — sowohl die Wahl des Themas als auch den kombinierten Einsatz von Claude Code und Gemini.
+
