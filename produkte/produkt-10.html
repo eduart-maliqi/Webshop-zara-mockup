@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,6 @@
                 <a href="../produkte.html#kinder" class="header__nav-link">Kinder</a>
                 <a href="../produkte.html" class="header__nav-link">Alle Produkte</a>
                 <a href="../kontakt.html" class="header__nav-link">Kontakt</a>
-                <a href="../login.html" class="header__nav-link">Anmelden</a>
                 <a href="../warenkorb.html" class="header__nav-link header__cart-link"><svg class="header__cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a2 2 0 0 0 2 1.5h8a2 2 0 0 0 2-1.5L22 7H6"/></svg><span class="visually-hidden">Warenkorb</span> <span class="header__cart-count" data-cart-count>0</span></a>
             </nav>
             <button class="header__menu-btn" aria-label="Menü öffnen">
@@ -31,8 +30,17 @@
                 <div class="product-detail__gallery">
                     <img src="https://images.unsplash.com/photo-1576110598658-096ae24cdb97?w=800&q=80"
                          alt="Kaschmir Pullover" class="product-detail__image">
-                    <iframe class="product-detail__video" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Produktvideo" frameborder="0" allowfullscreen></iframe>
+
+                    <!-- Video -->
+                    <div class="product-detail__video-wrap">
+                        <iframe class="product-detail__video"
+                                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?controls=1&modestbranding=1&rel=0&showinfo=0"
+                                title="Produktvideo"
+                                frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        <span class="product-detail__video-cover">Produktvideo</span>
+                    </div>
                 </div>
 
                 <div class="product-detail__info">
@@ -144,9 +152,6 @@ if (menuBtn && nav) {
   });
 }
 </script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-    <script src="../js/auth.js?v=1"></script>
     <script src="../js/cart.js?v=2"></script>
 </body>
 </html>
